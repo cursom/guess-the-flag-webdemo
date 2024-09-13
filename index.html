@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Flag</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <img id="flag-image" src="" alt="Flag Image">
+        <div class="buttons">
+            <button id="regenerate">Regenerate</button>
+            <button id="guess-flag">Guess Flag</button>
+        </div>
+        <select id="language-selector">
+            <option value="en">English (🇬🇧)</option>
+            <option value="hu">Hungarian (🇭🇺)</option>
+            <option value="es">Spanish (🇪🇸)</option>
+            <option value="fr">French (🇫🇷)</option>
+            <option value="de">German (🇩🇪)</option>
+            <option value="it">Italian (🇮🇹)</option>
+            <option value="pt">Portuguese (🇵🇹)</option>
+            <option value="pl">Polish (🇵🇱)</option>
+        </select>
+        <input type="text" id="flag-input" placeholder="Enter your guess">
+        <div>
+            <input type="checkbox" id="debug-console">
+            <label for="debug-console">Enable Debug Console</label>
+        </div>
+        <p id="result"></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
